@@ -9,22 +9,22 @@
  * This function converts temperature from fahrenheit to celsius 
  */
 function convert() {
-  // Entering height and weight
+  // Entering temperature in fahrenheit
   let temperature = parseFloat(document.getElementById('temperature').value)
 
 
-  // Calculating with bmi formula 
+  // converting with the correct formula 
   let celsius = 5.0/9.0 * (temperature - 32)
   let result;
 
 
-  //  //Dividing as per the bmi conditions
+  // Displaying sentence once converted 
   if (celsius < 10) {
     result = "<br>It's Cold Out! Better Bundle Up!";
   } else if (celsius >= 10 && celsius < 20) {
     result = "<br>It's Perfect Out! Go Have Some Fun!";
   } else if (celsius < 30) {
-    result = "<br> It's Hot Out! I Hope Your Wearing Suncreen!";
+    result = "<br> It's Hot Out! I Hope Your Wearing Sunscreen!";
   } else {
     result = "<br> I Don't Believe It!"
   }
