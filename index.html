@@ -12,11 +12,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png" />
     <link rel="manifest" href="./fav_index/site.webmanifest" />
+    <!-- Googles MDl Colour Scheme and Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-purple.min.css" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-indigo.min.css" />
     <!--Style Sheet -->
     <link rel="stylesheet" href="./css/style.css" />
-    <title> BMI Calculator </title>
+    <title> Temperature Coverter </title>
   </head>
   <body>
     <!-- For Googles MDL-->
@@ -32,8 +33,8 @@
       <!-- Colored text -->
       <main class="mdl-layout__content">
         <h3>Please enter your tempertaure in fahrenheit to convert it to celsius</h3>
-        <!-- BMI image -->
-        <img src = "./images/fahrenheit.png">
+        <!-- Thermometer image -->
+        <img src = "./images/fahrenheit.jpg">
         <!-- Numeric Textfield -->
         <form action="#">
           <center><p>Enter Temperature (F°)</p></center>
@@ -43,17 +44,15 @@
               type="number"
               pattern="-?[0-9]*(\.[0-9]+)?"
               id="temperature"
-            />
+              />
             <label class="mdl-textfield__label" for="temperature">Temp...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
-				
         <!-- Raised button with ripple -->
         <button
         class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="convert()"
-        >
+          onclick="convert()">
           Calculate
         </button>
         <br/>

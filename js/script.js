@@ -6,7 +6,7 @@
 
 'use strict';
 /**
- * This function calculates your bmi based on your height in cm and weight in kg
+ * This function converts temperature from fahrenheit to celsius 
  */
 function convert() {
   // Entering height and weight
@@ -19,20 +19,17 @@ function convert() {
 
 
   //  //Dividing as per the bmi conditions
-  // if (celsius < 18.6)
-  //   result = "<br>You're Underweight!";
-  
-  // else if (celsius >= 18.6 && bmi < 24.9)
-  //    result = "<br> You're Normal Weight!!";
-  
-  // else if (24.9 < celsius)
-  //   result = "<br> You're Overweight!!!";
-  // else
-  //   result = "<br> Invalid Answers"
-
-
+  if (celsius < 10) {
+    result = "<br>It's Cold Out! Better Bundle Up!";
+  } else if (celsius >= 10 && celsius < 20) {
+    result = "<br>It's Perfect Out! Go Have Some Fun!";
+  } else if (celsius < 30) {
+    result = "<br> It's Hot Out! I Hope Your Wearing Suncreen!";
+  } else {
+    result = "<br> I Don't Believe It!"
+  }
 
   // Displaying results 
-  document.getElementById('celsius').innerHTML = 'The temperature converted to celsius is ' + celsius.toFixed(2)
+  document.getElementById('celsius').innerHTML = 'The temperature converted to celsius is ' + celsius.toFixed(2) + '°C' + result
   
 }
